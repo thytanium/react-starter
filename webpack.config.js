@@ -32,10 +32,6 @@ module.exports = {
           {
             loader: "babel-loader",
             options: {
-              presets: [
-                ["@babel/preset-env", { useBuiltIns: "entry", corejs: 3 }],
-                ["@babel/preset-react", { runtime: "automatic" }],
-              ],
               plugins: [
                 !isProduction && require.resolve("react-refresh/babel"),
               ].filter(Boolean),
