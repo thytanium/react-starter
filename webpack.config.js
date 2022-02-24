@@ -64,7 +64,6 @@ module.exports = {
   devtool: !isProduction && "eval",
 
   devServer: {
-    hot: true,
     historyApiFallback: true,
     static: { directory: path.join(__dirname, "public") },
   },
